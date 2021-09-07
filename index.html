@@ -13,7 +13,7 @@
         <div class="navbar">
             <img src="img/logo.png" alt="this a logo image" class="logo" />
             <nav>
-                <ul>
+                <ul id="menuList">
                     <li><a href="">Game Controller</a></li>
                     <li><a href="">Video Exesotion</a></li>
                     <li>
@@ -24,7 +24,7 @@
                     </li>
                 </ul>
             </nav>
-            <img src="img/menu.png" alt="this a menu image" class="menu-icon" />
+            <img src="img/menu.png" alt="this a menu image" class="menu-icon" onclick="togglemenu()" />
         </div>
         <div class="row">
             <div class="col-1">
@@ -48,6 +48,20 @@
             <img src="img/ig.png" alt="">
         </div>
     </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
 
 </html>
