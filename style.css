@@ -35,3 +35,20 @@ nav ul li {
     display: inline;
     margin: 30px;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: rgb(218, 15, 15);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
